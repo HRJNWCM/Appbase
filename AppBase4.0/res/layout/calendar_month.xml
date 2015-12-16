@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.cj.widget.time.calendar.MonthView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/CalendarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/calendar_month_topmargin"
+        android:background="#4B5A77"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/calendar_month_title_bottommargin" />
+
+    <org.cj.widget.time.calendar.CalendarGridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <org.cj.widget.time.calendar.CalendarRowView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4B5A77"
+            android:paddingBottom="@dimen/calendar_day_headers_paddingbottom" >
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </org.cj.widget.time.calendar.CalendarRowView>
+
+        <include layout="@layout/calendar_week" />
+
+        <include layout="@layout/calendar_week" />
+
+        <include layout="@layout/calendar_week" />
+
+        <include layout="@layout/calendar_week" />
+
+        <include layout="@layout/calendar_week" />
+
+        <include layout="@layout/calendar_week" />
+    </org.cj.widget.time.calendar.CalendarGridView>
+
+</org.cj.widget.time.calendar.MonthView>
